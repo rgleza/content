@@ -2,6 +2,7 @@ args:
 - defaultValue: Text with IPs
   name: text
   required: true
+  description: "This script will look for potential IPs in text when they are appended or prepended with other strings."
 commonfields:
   id: FindAllIPs
   version: -1
@@ -10,8 +11,7 @@ contentitemexportablefields:
     fromServerVersion: ""
 dockerimage: demisto/python3:3.10.11.61265
 enabled: true
-important:
-- related: ""
+comment: ""
 name: FindAllIPs
 outputs:
 - contextPath: IPsFound
